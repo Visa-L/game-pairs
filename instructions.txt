@@ -1,0 +1,44 @@
+Muistipeli
+
+Käyttöohjeet:
+Ohjelma toteuttaa muistipelin. Pelaajien sekä korttien määrää voi vaihtaa
+päävalikosta. Oletuksena pelaajia on 2 ja kortteja 20. Kuitenkin korttien
+maksimimäärä on 26 eli 13 paria.
+ Ohjelma käynnistää aluksi päävalikon. Peli alkaa käyttäjän painaessa Start
+nappia päävalikossa. Quit nappi lopettaa ohjelman suorituksen ja sulkee pelin.
+ Vuorossa oleva pelaaja kääntää pelilaudalta kaksi korttia paljastaen niiden
+arvon (kirjaimen). Jos korttien arvo on sama, pelaaja saa pisteen, kortit
+poistetaan pelilaudalta ja pelaaja saa uuden vuoron. Muuten vuoro siirtyy
+seuraavalle pelaajalle käyttäjän painettua CLOSE nappia, joka kääntää edellä
+käännetyt kortit takaisin piiloon. Peli jatkuu kunnes kaikki parit on löydetty
+ja pelilauta on tyhjä. Tällöin peli kertoo voittajan ja voittajan keräämät
+pisteet (parit). Useamman pelaajan tasapelistä kerrotaan myös pelin päätyttyä
+ja kerrotaan heidän keräämät pisteet sekä tunnisteet.
+
+Ohjelman rakenne ja sisältö:
+Pelaajien ja korttien määrää voidaan vaihtaa päävalikosta. Pelilaudalla kortit
+asetellaan siten, että rivien ja sarakkeiden lukumäärät ovat mahdollisimman
+lähellä toisiaan ja sarakkeiden lukumäärä on suurempi, jos määrät eivät voi
+olla samat. Koska kortteja pitää olla parillinen määrä, käyttäjän antamasta
+korttimäärästä vähennetään yksi, jos se on pariton, ja asetetaan oletusarvoon
+jos laitonta (negatiivista) numeroa yritetään asettaa. Kortit on toteutettu
+painonappeina.
+ Korttien selkäpuoli on lila ja kuvapuoli valkoinen, sisältäen kortin
+arvon (kirjaimen). Kortit käännetään näkyviin klikkaamalla niitä ja suljetaan
+painamalla "CLOSE" nappia. Kyseinen nappi on aktiivinen eli käytettävissä
+vasta, kun kaksi korttia on käännetty näkyviin, eikä jo paljastettua korttia
+saa piiloon muuten kuin edellä kuvatulla napilla, jolloin myös vuoro päättyy.
+Vain kaksi korttia voi olla kerrallaan näkyvissä.
+ Nykyinen pistetilanne on pelin ajan näkyvissä oikeassa yläkulmassa. Pelin
+loputtua avautuu uusi ikkuna, joka kertoo voittaneen/voittaneiden pistesaldon
+sekä tunnisteen. Avautuvasta ikkunasta voi aloittaa pelin uudestaan tai
+lopettaa ohjelman. Kaikkien pelaajien pistesaldo on näkyvissä myös pelin
+loputtua samassa paikassa ja tulostaulu nollataan uuden pelin alkaessa.
+ Peliin kulunut aika on näkyvillä koko pelin ajan, sekä sen päätyttyä ikkunan
+vasemmassa yläkulmassa. Myös vuorossa olevan pelaajan tunniste on nähtävissä
+ikkunassa.
+ Peli voidaan palauttaa alkutilanteeseen, eli aloittaa uusi peli, milloin vain
+painamalla nappia "Restart". Tällöin pelaaja- sekä korttimäärä pysyvät samoina,
+kuin edellisessä pelissä, mutta kortit sekoitetaan uuteen järjestykseen. Myös
+päävalikkoon voidaan palata milloin vain ja vaihtaa sieltä pelaaja- tai
+korttimäärää.
